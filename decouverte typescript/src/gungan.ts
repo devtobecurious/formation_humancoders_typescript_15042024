@@ -1,6 +1,8 @@
 import {AvecDeLaVie} from './avec-de-la-vie'
 
-type NumberOrUndefined = number | undefined
+type TypeOrUndefined<T> = T | undefined
+type NumberOrUndefined = TypeOrUndefined<number>
+// type NumberOrUndefined = number | undefined // Première version, non générique
 
 export class Gungan { //implements AvecDeLaVie {
     // pointsDeVie : number | undefined // utilisation unique du type
