@@ -7,6 +7,10 @@ exports.Wookiee = void 0;
 const character_1 = __importDefault(require("./character"));
 // seconde version
 class Wookiee extends character_1.default {
+    constructor(prenom, pointsDeVie) {
+        console.info('grro aaa');
+        super(prenom, pointsDeVie);
+    }
     parler() {
         // super.parler();
         console.info('ROAAAAGGRR');

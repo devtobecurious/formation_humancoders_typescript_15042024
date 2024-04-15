@@ -1,13 +1,24 @@
-export class Gungan {
-    constructor() {
+import {AvecDeLaVie} from './avec-de-la-vie'
+
+type NumberOrUndefined = number | undefined
+
+export class Gungan { //implements AvecDeLaVie {
+    // pointsDeVie : number | undefined // utilisation unique du type
+    pointsDeVie: NumberOrUndefined;
+// pointsDeVie ?: number;
+
+
+    // 1° technique pour éviter le !  constructor(pts: number) {
+    // 2. ° technique constructor(private pointsDeVie: number) {
         // this.prenom = prenom
-    }
+        //this.pointsDeVie = pts;
+    //}    
 
     parler() {
         console.info('Missa va partir')
     }
 
-    get isAlive() { // accesseur depuis une propriété
-        return true
-    }
+    // get isAlive() { // accesseur depuis une propriété
+    //     return this.pointsDeVie > 0;
+    // }
 }
