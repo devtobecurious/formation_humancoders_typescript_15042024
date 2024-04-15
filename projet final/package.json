@@ -1,0 +1,28 @@
+{
+  "name": "projet-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "config": {
+    "api": "urlll"
+  },
+
+  "scripts": {
+    "hello": "echo 'Ca va ?'",
+
+    "prejohn": "npm run hello",
+    "john": "echo 'hello john'",
+    "postjohn": "echo 'ben oui !'",
+
+    "pretsc": "echo 'je build une autre librairie'",
+    "tsc": "tsc",
+    "build": "npm run tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
