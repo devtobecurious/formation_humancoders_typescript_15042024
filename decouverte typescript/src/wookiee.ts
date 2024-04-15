@@ -2,6 +2,11 @@ import Character from './character'
 
 // seconde version
 export class Wookiee extends Character {
+    constructor(prenom: string, pointsDeVie: number) {
+        console.info('grro aaa')
+        super(prenom, pointsDeVie)
+    }
+
     parler(): void {
         // super.parler();
         console.info('ROAAAAGGRR')
