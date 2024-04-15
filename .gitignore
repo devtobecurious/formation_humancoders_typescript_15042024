@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Dependency directories
+/.pnp/
+.pnp.js
+
+# Optional npm cache directory
+.npm
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs and editors
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+# Environment variables
+.env
+.env.*
+# Build output
+/dist/
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
