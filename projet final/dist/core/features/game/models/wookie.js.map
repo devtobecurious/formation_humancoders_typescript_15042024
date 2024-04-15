@@ -1,0 +1,1 @@
+{"version":3,"file":"wookie.js","sourceRoot":"","sources":["../../../../../src/core/features/game/models/wookie.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC;AAE1C;;GAEG;AACH,MAAM,OAAQ,SAAQ,UAAU;IAC5B,QAAQ,CAAC,UAAsB;QAC3B,KAAK,CAAC,QAAQ,CAAC,UAAU,CAAC,CAAC;QAC3B,OAAO,CAAC,IAAI,CAAC,+CAA+C,UAAU,CAAC,WAAW,EAAE,CAAC,CAAA;IACzF,CAAC;CACJ;AAED,eAAe,OAAO,CAAC"}

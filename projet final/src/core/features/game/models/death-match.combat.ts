@@ -1,7 +1,7 @@
 import { Combat } from "./combat";
 import { Combattant } from "./combattant";
 
-export class DeathMatchCombat extends Combat {
+export class DeathMatchCombat implements Combat {
 
     lancer(combattant1: Combattant, combattant2: Combattant): void {
         while(combattant1.estEnVie && combattant2.estEnVie) {
