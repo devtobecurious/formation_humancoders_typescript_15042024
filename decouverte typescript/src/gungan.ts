@@ -1,7 +1,8 @@
 import {AvecDeLaVie} from './avec-de-la-vie'
+import {NumberOrUndefined} from './core'
 
-type TypeOrUndefined<T> = T | undefined
-type NumberOrUndefined = TypeOrUndefined<number>
+// type TypeOrUndefined<T> = T | undefined
+// type NumberOrUndefined = TypeOrUndefined<number>
 // type NumberOrUndefined = number | undefined // Première version, non générique
 
 export class Gungan { //implements AvecDeLaVie {
