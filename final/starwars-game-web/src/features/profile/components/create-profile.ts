@@ -1,6 +1,10 @@
-import { Component } from "../../core/ui/components/base-component";
+import { Component } from "../../../core/ui/components/base-component";
 
 export class CreateProfile implements Component {
+    constructor() {
+        
+    }
+
     render(): void {
         document.querySelector<HTMLDivElement>('#outlet')!.innerHTML = `
         <form>

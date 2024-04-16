@@ -14,6 +14,6 @@ setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 // $.ajax('')
 
-const geo: GeoSphere = {
+// const geo: GeoSphere = {
   
-}
+// }

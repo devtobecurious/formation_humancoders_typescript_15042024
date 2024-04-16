@@ -1,6 +1,6 @@
 
 import { Component } from './core/ui/components/base-component'
-import { CreateProfile } from './features/profile/create-profile'
+import { CreateProfile } from './features/profile/components/create-profile'
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
