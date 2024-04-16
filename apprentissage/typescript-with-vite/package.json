@@ -11,8 +11,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/jquery": "^3.5.29",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "@types/jquery": "^3.5.29"
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "d3": "^7.9.0"
   }
 }
