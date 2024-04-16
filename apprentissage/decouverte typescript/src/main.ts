@@ -2,6 +2,7 @@ import { Wookiee } from './wookiee'
 import { Gungan } from './gungan'
 import Character from './character'
 import {AvecDeLaVie} from './avec-de-la-vie'
+import { CalculerTTC } from './core'
 
 
 const jarjar: Gungan = new Gungan()
@@ -87,6 +88,24 @@ type TypeArmeAmeliore = TypeArmePipe | 'Force'
 
 function affecterTypeArme(type: TypeArmeAmeliore): void {
     type = 'Force'
+}
+//#endregion
+
+//#region Functions
+function calculerTTC(valueHT: number): number {
+    return valueHT * 1.2
+}
+
+function preparerMonnaie(callbackTTC: any): void {
+    const resultTTC = callbackTTC(20)
+}
+
+function preparerMonnaieBis(callbackTTC: Function): void {
+    const resultTTC = callbackTTC('Test') // Aucun test sur le type
+}
+
+function preparerMonnaieTer(callbackTTC: CalculerTTC): void {
+    const resultTTC = callbackTTC(20)
 }
 //#endregion
 
