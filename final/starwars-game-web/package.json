@@ -1,12 +1,10 @@
 {
-  "name": "typescript-with-vite",
+  "name": "starwars-game-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "npm run build",
     "dev": "vite",
-    "start": "npm run dev",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },

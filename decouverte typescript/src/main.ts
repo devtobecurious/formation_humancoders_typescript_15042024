@@ -38,3 +38,55 @@ afficherLesInfos(jarjarbis)
 // //character.secouerLesMains()
 
 
+
+//#region Unknown
+function afficherNimp(item: unknown): void {
+    if(typeof item === 'string') {
+        console.info(item.toLowerCase());
+    }
+
+    if(typeof item === 'number') {
+        console.info(item.toFixed(2));
+    }
+}
+
+afficherNimp('HELLO')
+afficherNimp(1)
+//#endregion
+
+//#region type Pipé
+function afficherStructure(item: string | number): void {
+    if(typeof item === 'string') { // type guard primitif
+        console.info(item.toLowerCase());
+    }
+
+    if(typeof item === 'number') {
+        console.info(item.toFixed(2));
+    }
+}
+
+function afficherStructureBis(item: 1 | 'HELLO'): void {
+    // type guard pour controler
+}
+//#endregion
+
+//#region Enum 
+enum TypeArme {
+    ARBALETE,
+    PISTOLET,
+    SABRE
+}
+
+type EnumPipe = keyof typeof TypeArme
+
+const en: EnumPipe = 'ARBALETE'
+
+// Mieux vaut lui préférer l'enum avec pipe
+type TypeArmePipe = 'Arbalete' | 'Pistolet' | 'Sabre'
+type TypeArmeAmeliore = TypeArmePipe | 'Force'
+
+function affecterTypeArme(type: TypeArmeAmeliore): void {
+    type = 'Force'
+}
+//#endregion
+
